@@ -10,6 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.example.wordle.MainActivity;
 import com.example.wordle.databinding.FragmentDashboardBinding;
 
 public class DashboardFragment extends Fragment {
@@ -23,6 +24,8 @@ public class DashboardFragment extends Fragment {
 
         binding = FragmentDashboardBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
+
+        dashboardViewModel.updateText(((MainActivity) getActivity()).loadUser());
 
         final TextView textView = binding.textDashboard;
         dashboardViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
