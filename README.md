@@ -2,11 +2,13 @@
 
 这是 [2024 年清华大学计算机系学生科协暑期培训](https://summer24.net9.org/) Android 部分的作业。
 
-具体而言，你需要进行**代码填空**，使此仓库中的代码能够
+具体而言，你需要进行**代码填空**，使此仓库中的代码能够：
 
 - 正常构建，
 - 能在 Android 机器上运行，
 - 且满足一定的功能要求。
+
+你只需要补全仓库所有文件中 `TODO begin` 和 `TODO end` 之间的代码即可。
 
 代码补充完后的一个参考版本请见 [leverimmy/Wordle-App](https://github.com/leverimmy/Wordle-App)，本仓库基于该仓库进行修改而得。
 
