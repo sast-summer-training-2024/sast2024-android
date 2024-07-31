@@ -226,7 +226,7 @@ public class HomeFragment extends Fragment {
 
     void processEnter() {
         AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(getContext());
-        if (guessWord.length() < WORD_LENGTH || wordSet.isNotAccWord(String.valueOf(guessWord))) {
+        if (guessWord.length() == WORD_LENGTH && wordSet.isNotAccWord(String.valueOf(guessWord))) {
             dialogBuilder.setTitle("错误")
                 .setMessage("未找到这个单词！")
                 .setPositiveButton("好的", (dialog, which) -> Log.i("DialogBuilder","点击了好的"))
